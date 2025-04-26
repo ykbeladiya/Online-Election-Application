@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OnlineVotingSystem</string>
+    <string name="CodeColor">"#0000ff"</string>
+
+    <string-array name="Year">
+        <item> -- Year --</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Branch">
+        <item> -- Branch --</item>
+        <item>Co-e</item>
+        <item>Co-m</item>
+        <item>Civil</item>
+        <item>Ec</item>
+    </string-array>
+</resources>

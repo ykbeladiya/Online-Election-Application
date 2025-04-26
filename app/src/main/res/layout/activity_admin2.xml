@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin2Activity">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:onClick="HomebtnClick"
+        android:background="@mipmap/ic_logout" />
+
+    <Switch
+        android:id="@+id/electionSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/textborder"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:text="\tElection" />
+
+    <Switch
+        android:id="@+id/resultSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/electionSwitch"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/textborder"
+        android:textSize="25dp"
+        android:text="\tResult"/>
+</RelativeLayout>

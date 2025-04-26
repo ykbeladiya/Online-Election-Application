@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFirstActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_admin"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/AdminAuth"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/A_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Admin ID"
+                android:inputType="textEmailAddress"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/A_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/LoginBtn"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttondesign"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:onClick="AdminAuthClick"
+            android:layout_marginHorizontal="25dp"
+            android:text="Log in" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+<!--        <Button-->
+<!--            android:id="@+id/button6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:background="@drawable/buttondesign"-->
+<!--            android:drawableLeft="@mipmap/ic_launcher_result"-->
+<!--            android:onClick="resultClick"-->
+<!--            android:text="Result"-->
+<!--            android:textColor="#ffffff" />-->
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttondesign"
+            android:drawableLeft="@mipmap/ic_launcher_time"
+            android:onClick="resultClick"
+            android:text="Scheduling"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttondesign"
+            android:drawableLeft="@mipmap/ic_launcher_addcandidate"
+            android:text="Add Candidate"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>
